@@ -18,3 +18,6 @@ def equal(a,b):
         print("la valeur de a:{}== a la valeur de b:{}".format(a,b))
 
 equal (sys.argv[1],sys.argv[2]);
+
+def mgit():
+    print("modifier depuis git pour pull test")
