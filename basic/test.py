@@ -9,8 +9,7 @@ import sys, datetime
 print(sys.version_info)
 print(sys.version)
 print(sys.platform)
-print("je suis le module:",__name__) #affiche le nom du module principal
-
+print("je suis le module:", __name__)  # affiche le nom du module principal
 
 
 ########################################################################################################################################
@@ -132,56 +131,46 @@ print("c:", c)
 
 #####17/11/2016 exercice
 
-#calcul vitesse
-temps=6.896
-distance=19.7
+# calcul vitesse
+temps = 6.896
+distance = 19.7
 
-vitesse=distance/temps
-print("la vitesse necessaire pour parcourir la distance d={}m en un temps t={}s est de v={:.2f} m/s".format(distance,temps,vitesse))
+vitesse = distance / temps
+print("la vitesse necessaire pour parcourir la distance d={}m en un temps t={}s est de v={:.2f} m/s".format(distance,
+                                                                                                            temps,
+                                                                                                            vitesse))
 
-#entier de 0 a 3 avec range
+# entier de 0 a 3 avec range
 
 for i in range(4):
     print(i)
 print("fin entier de 0 à 3")
 
-#entier de 4 à 7 avec range mais en utilisant des itérateurs avec la fonction iter()
-l=range(4,8)
+# entier de 4 à 7 avec range mais en utilisant des itérateurs avec la fonction iter()
+l = range(4, 8)
 generateur = iter(l)
 for i in l:
-   print(next(generateur))
+    print(next(generateur))
 print("fin des entiers de 4 à 7")
-#affiché caractere suivant à l'aide d'1 bcle
-msg="c'est la formation devops"
+# affiché caractere suivant à l'aide d'1 bcle
+msg = "c'est la formation devops"
 for s in msg:
-    print (s)
+    print(s)
 print("fin boucle affichage caractere chaine msg")
-#soit la liste suivante:trier la liste
-liste=[17,38,10,25,72]
+# soit la liste suivante:trier la liste
+liste = [17, 38, 10, 25, 72]
 
 print(sorted(liste))
-#ajout l'element 12
+# ajout l'element 12
 liste.append(12)
 print(liste)
-#indice de l'element 17
+# indice de l'element 17
 print("index de l'element 17 est {}".format(liste.index(17)))
-#enlever 38 est afficher la liste
+# enlever 38 est afficher la liste
 liste.remove(38)
 print(liste)
-#afficher sous liste 3eme element jusqu'q la afin
-print("sous liste:",liste[2:])
+# afficher sous liste 3eme element jusqu'q la afin
+print("sous liste:", liste[2:])
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-print("                                                      ######################### Fin du Main ######################")
+print(
+    "                                                      ######################### Fin du Main ######################")
